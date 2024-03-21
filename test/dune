@@ -1,0 +1,17 @@
+(executable
+ (name jsoo_effects_bug_reproduction)
+ (libraries prr tezt.core tezt.js)
+ (preprocess
+  (pps js_of_ocaml-ppx))
+ (modes js))
+
+(rule
+ (alias runtest)
+ (deps jsoo_effects_bug_reproduction.bc.js)
+ (action
+  (run %{bin:node} %{deps})))
+
+(env
+ (_
+  (js_of_ocaml
+   (flags :standard --enable=effects))))
