@@ -27,6 +27,7 @@
   js_of_ocaml-ppx
   js_of_ocaml-lwt
   (tezt (>= 3.0.0))
+  (ocaml (= 5.1.0))
   )
  (tags
   (topics "to describe" your project)))
