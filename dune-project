@@ -23,7 +23,7 @@
  (description "A longer description")
 
  (depends ocaml dune
-  js_of_ocaml
+  (js_of_ocaml (= 5.7.1))
   js_of_ocaml-ppx
   js_of_ocaml-lwt
   (tezt (>= 3.0.0))
